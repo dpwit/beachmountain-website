@@ -5,10 +5,13 @@ import ReactDom from 'react-dom';
 
 const todo = ['Create to do list', 'Save work', 'Commit to Github'];
 
-const element = React.createElement('ol', null, 
-	todo.map((todo, index) => React.createElement('li', {key: index}, todo))
-	);
-
+const element = 
+	<div>
+		<h1>To Do List</h1>
+		<ol> 
+			{ todo.map((todo, index) => <li key = {index}> {todo} </li>)}
+		</ol>
+	</div>
 //ReactDom.render (element, document.getElementById('root'));
 
 ReactDom.render (element, document.getElementById('root'));
