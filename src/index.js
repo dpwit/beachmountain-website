@@ -3,10 +3,10 @@ import ReactDom from 'react-dom';
 
 //const element = React.createElement('h1', null, 'Beach Mountain');
 
-const element = React.createElement('ol', null,
-	React.createElement('li', null, 'Create to do list'),
-	React.createElement('li', null, 'Save work'),
-	React.createElement('li', null, 'Commit to GitHub'),
+const todo = ['Create to do list', 'Save work', 'Commit to Github'];
+
+const element = React.createElement('ol', null, 
+	todo.map((todo) => React.createElement('li', null, task))
 	);
 
 //ReactDom.render (element, document.getElementById('root'));
