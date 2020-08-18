@@ -6,7 +6,7 @@ import ReactDom from 'react-dom';
 const todo = ['Create to do list', 'Save work', 'Commit to Github'];
 
 const element = React.createElement('ol', null, 
-	todo.map((todo) => React.createElement('li', null, task))
+	todo.map((todo, index) => React.createElement('li', {key: index}, todo))
 	);
 
 //ReactDom.render (element, document.getElementById('root'));
