@@ -29,7 +29,7 @@ class Main extends Component {
 					<Title/>
 					<List/>
 				</div>
-			}
+				}
 }
 
 ReactDom.render (<Main/>, document.getElementById('root'));
