@@ -1,17 +1,35 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDom from 'react-dom';
-
-//const element = React.createElement('h1', null, 'Beach Mountain');
 
 const todo = ['Create to do list', 'Save work', 'Commit to Github'];
 
-const element = 
-	<div>
-		<h1>To Do List</h1>
-		<ol> 
-			{ todo.map((todo, index) => <li key = {index}> {todo} </li>)}
-		</ol>
-	</div>
-//ReactDom.render (element, document.getElementById('root'));
+class List extends Component {
+	render() {
+		return (<ol> 
+				{ todo.map((todo, index) => <li key = {index}> {todo} </li>)}
+			</ol>
+		)
 
-ReactDom.render (element, document.getElementById('root'));
+	}
+
+}
+
+class Title extends Component {
+	render() {
+		return (<h1>To Do List</h1>
+		)
+
+	}
+
+}
+
+class Main extends Component {
+	render() {
+		return 	<div>
+					<Title/>
+					<List/>
+				</div>
+			}
+}
+
+ReactDom.render (<Main/>, document.getElementById('root'));
