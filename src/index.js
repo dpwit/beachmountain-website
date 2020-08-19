@@ -5,31 +5,31 @@ const todo = ['Create to do list', 'Save work', 'Commit to Github'];
 
 class List extends Component {
 	render() {
-		return (<ol> 
+		return (
+			<ol> 
 				{ todo.map((todo, index) => <li key = {index}> {todo} </li>)}
 			</ol>
-		)
-
+			)
 	}
-
 }
 
 class Title extends Component {
 	render() {
-		return (<h1>To Do List</h1>
-		)
-
+		return (
+			<h1>To Do List</h1>
+			)
 	}
-
 }
 
 class Main extends Component {
 	render() {
-		return 	<div>
-					<Title/>
-					<List/>
-				</div>
-				}
+		return (	
+		<div>
+			<Title/>
+		<List/>
+		</div>
+		)
+	}
 }
 
 ReactDom.render (<Main/>, document.getElementById('root'));
