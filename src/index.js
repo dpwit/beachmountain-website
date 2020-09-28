@@ -26,7 +26,7 @@ class Main extends Component {
 		return (	
 		<div>
 			<Title/>
-		<List/>
+			<List/>
 		</div>
 		)
 	}
