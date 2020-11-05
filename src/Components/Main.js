@@ -25,7 +25,7 @@ class Main extends Component {
 	render() {
 		return	<div>
 							<Title title = {['beach mountain']}/>
-							<BeachMountain posts={posts}/>
+							<BeachMountain posts = {posts}/>
 						</div>
 
 	}
