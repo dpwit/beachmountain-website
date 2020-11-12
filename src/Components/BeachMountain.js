@@ -1,6 +1,5 @@
 import React from 'react'
 import Photo from './Photo'
-import PropTypes from 'prop-types'
 
 function BeachMountain(props){
   return  <div className="photo-grid">
@@ -8,9 +7,5 @@ function BeachMountain(props){
           </div>
 }
 
-BeachMountain.PropTypes = {
-  posts: PropTypes.array.isRequired
-  onRemovePhoto: PropTypes.funch.isRequired
-}
 
 export default BeachMountain

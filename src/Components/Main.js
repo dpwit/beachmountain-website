@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Title from './Title'
 import BeachMountain from './BeachMountain'
+import Button from './Button'
 
 
 class Main extends Component {
@@ -40,7 +41,8 @@ class Main extends Component {
 	render() {
 		return	<div>
 							<Title title = {['beach mountain']}/>
-							<BeachMountain posts = {this.state.posts} onRemovePhoto={this.removePhoto}/> 
+							<Button className="add-button" btnType="secondary" />
+							<BeachMountain posts = {this.state.posts} onRemovePhoto={this.removePhoto}/>
 						</div>
 
 	}
