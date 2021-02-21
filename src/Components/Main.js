@@ -41,7 +41,7 @@ class Main extends Component {
 	render() {
 		return	<div>
 							<Title title = {['beach mountain']}/>
-							<Button className="add-button" btnType="secondary" />
+							<Button btnType="secondary" />
 							<BeachMountain posts = {this.state.posts} onRemovePhoto={this.removePhoto}/>
 						</div>
 
